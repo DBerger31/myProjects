@@ -6,14 +6,16 @@ tableData = [['apples', 'oranges', 'cherries', 'banana'],
 
 def printTable(somelist):
     colWidths = [0] * len(tableData)
+
     for i in range(len(tableData)):
         for word in tableData[i]:
-            if colWidths[i] < len(word):git
+            if colWidths[i] < len(word):
                 colWidths[i] = len(word)
-    for x in range(len(tableData)):
-        for y in range(len(tableData[x])):
-            ''.join(tableData[x])
-            print(tableData[x])
+
+    for x in range(len(tableData[0])):                              # x goes from 0 to 3 (size 4)
+        for y in range(len(tableData)):                             # y goes from 0 to 2 (size 3)
+            print(tableData[y][x].rjust(colWidths[y]), end=' ')
+        print()
 
 printTable(tableData)
 
