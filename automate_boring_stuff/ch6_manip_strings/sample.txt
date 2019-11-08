@@ -1,0 +1,7 @@
+The script I am using will
+Take all these lines and
+Add bullet points to the
+Beginning of each line
+Then it will create
+A new file with
+The new text.
