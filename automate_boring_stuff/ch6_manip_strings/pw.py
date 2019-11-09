@@ -1,6 +1,8 @@
 #! /usr/bin/python3
 #pw.py - An insecure password locker program
 
+#On Ubuntu 18.04
+
 PASSWORDS = {'email': 'whatitdoboo', 'blog': 'acdfgfdgjkd', 'luggage': '12345'}
 
 import sys, pyperclip
