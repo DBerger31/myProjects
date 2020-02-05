@@ -18,8 +18,6 @@ noun = re.compile(r'NOUN*')
 adverb = re.compile(r'ADVERB*')
 verb = re.compile(r'VERB*')
 
-#TODO: Fix issue with not being able to replace additional
-# occurences of adjectives ,verbs, etc.
 
 for word in text.split():
     if adjective.search(word):
