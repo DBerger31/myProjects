@@ -37,7 +37,3 @@ while not url.endswith('#'):
 
     prevLink = soup.select('a[rel="prev"]')[0]
     url = 'https://xkcd.com' + prevLink.get('href')
-
-#TODO: SAVE THE IMAGE TO ./xkcd
-
-#TODO: GET THE PREV BUTTON'S URL
