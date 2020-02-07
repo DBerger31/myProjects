@@ -2,14 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="3e257316-3f8d-47a0-894f-d2da61d86768" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/ch10_organizing_files/org_pract.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ch12_webscraping/example.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ch12_webscraping/learn_web_scrape.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ch12_webscraping/mapIt.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ch12_webscraping/searchpypi.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ch12_webscraping/downloadXkcd.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ch12_webscraping/google_search.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ch12_webscraping/search.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ch12_webscraping/test.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ch9_reading_writing/madlib/madlib.py" beforeDir="false" afterPath="$PROJECT_DIR$/ch9_reading_writing/madlib/madlib.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ch9_reading_writing/madlib/newpanda.txt" beforeDir="false" afterPath="$PROJECT_DIR$/ch9_reading_writing/madlib/newpanda.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ch12_webscraping/searchpypi.py" beforeDir="false" afterPath="$PROJECT_DIR$/ch12_webscraping/searchpypi.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -19,6 +17,7 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
+        <option value="HTML File" />
         <option value="Python Script" />
       </list>
     </option>
@@ -37,6 +36,7 @@
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/.." />
     <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
@@ -112,27 +112,6 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="multiplicationQuiz" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
-      <module name="automate_boring_stuff" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/ch8_input_validation" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/ch8_input_validation/multiplicationQuiz.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
     <configuration name="sandwich_maker" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="automate_boring_stuff" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -154,13 +133,33 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
+    <configuration name="search" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="automate_boring_stuff" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/ch12_webscraping" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/ch12_webscraping/search.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
     <recent_temporary>
       <list>
         <item itemvalue="Python.madlib" />
         <item itemvalue="Python.moreregexpractice" />
         <item itemvalue="Python.mcb" />
         <item itemvalue="Python.sandwich_maker" />
-        <item itemvalue="Python.multiplicationQuiz" />
       </list>
     </recent_temporary>
   </component>
@@ -208,41 +207,49 @@
     </state>
     <state x="3210" y="371" width="424" height="484" key="FileChooserDialogImpl/67.27.1853.1053/1920.0.2560.1080@1920.0.2560.1080" timestamp="1578689799317" />
     <state x="1001" y="389" width="424" height="484" key="FileChooserDialogImpl/67.27.1853.1053/1920.0.2560.1080@67.27.1853.1053" timestamp="1578689054446" />
-    <state width="2537" height="260" key="GridCell.Tab.0.bottom" timestamp="1579484209224">
+    <state width="2537" height="354" key="GridCell.Tab.0.bottom" timestamp="1580950885151">
       <screen x="1920" y="0" width="2560" height="1080" />
     </state>
+    <state width="2537" height="354" key="GridCell.Tab.0.bottom/0.541.1920.1052/1920.0.2560.1080@1920.0.2560.1080" timestamp="1580950885151" />
     <state width="2537" height="260" key="GridCell.Tab.0.bottom/67.27.1853.1053/1920.0.2560.1080@1920.0.2560.1080" timestamp="1579484209224" />
     <state width="1830" height="252" key="GridCell.Tab.0.bottom/67.27.1853.1053/1920.0.2560.1080@67.27.1853.1053" timestamp="1578699577980" />
-    <state width="2537" height="260" key="GridCell.Tab.0.center" timestamp="1579484209224">
+    <state width="2537" height="354" key="GridCell.Tab.0.center" timestamp="1580950885151">
       <screen x="1920" y="0" width="2560" height="1080" />
     </state>
+    <state width="2537" height="354" key="GridCell.Tab.0.center/0.541.1920.1052/1920.0.2560.1080@1920.0.2560.1080" timestamp="1580950885151" />
     <state width="2537" height="260" key="GridCell.Tab.0.center/67.27.1853.1053/1920.0.2560.1080@1920.0.2560.1080" timestamp="1579484209224" />
     <state width="1830" height="252" key="GridCell.Tab.0.center/67.27.1853.1053/1920.0.2560.1080@67.27.1853.1053" timestamp="1578699577980" />
-    <state width="2537" height="260" key="GridCell.Tab.0.left" timestamp="1579484209224">
+    <state width="2537" height="354" key="GridCell.Tab.0.left" timestamp="1580950885151">
       <screen x="1920" y="0" width="2560" height="1080" />
     </state>
+    <state width="2537" height="354" key="GridCell.Tab.0.left/0.541.1920.1052/1920.0.2560.1080@1920.0.2560.1080" timestamp="1580950885151" />
     <state width="2537" height="260" key="GridCell.Tab.0.left/67.27.1853.1053/1920.0.2560.1080@1920.0.2560.1080" timestamp="1579484209224" />
     <state width="1830" height="252" key="GridCell.Tab.0.left/67.27.1853.1053/1920.0.2560.1080@67.27.1853.1053" timestamp="1578699577980" />
-    <state width="2537" height="260" key="GridCell.Tab.0.right" timestamp="1579484209224">
+    <state width="2537" height="354" key="GridCell.Tab.0.right" timestamp="1580950885151">
       <screen x="1920" y="0" width="2560" height="1080" />
     </state>
+    <state width="2537" height="354" key="GridCell.Tab.0.right/0.541.1920.1052/1920.0.2560.1080@1920.0.2560.1080" timestamp="1580950885151" />
     <state width="2537" height="260" key="GridCell.Tab.0.right/67.27.1853.1053/1920.0.2560.1080@1920.0.2560.1080" timestamp="1579484209224" />
     <state width="1830" height="252" key="GridCell.Tab.0.right/67.27.1853.1053/1920.0.2560.1080@67.27.1853.1053" timestamp="1578699577980" />
-    <state width="2537" height="354" key="GridCell.Tab.1.bottom" timestamp="1579484027547">
+    <state width="2537" height="354" key="GridCell.Tab.1.bottom" timestamp="1580950885152">
       <screen x="1920" y="0" width="2560" height="1080" />
     </state>
+    <state width="2537" height="354" key="GridCell.Tab.1.bottom/0.541.1920.1052/1920.0.2560.1080@1920.0.2560.1080" timestamp="1580950885152" />
     <state width="2537" height="354" key="GridCell.Tab.1.bottom/67.27.1853.1053/1920.0.2560.1080@1920.0.2560.1080" timestamp="1579484027547" />
-    <state width="2537" height="354" key="GridCell.Tab.1.center" timestamp="1579484027547">
+    <state width="2537" height="354" key="GridCell.Tab.1.center" timestamp="1580950885151">
       <screen x="1920" y="0" width="2560" height="1080" />
     </state>
+    <state width="2537" height="354" key="GridCell.Tab.1.center/0.541.1920.1052/1920.0.2560.1080@1920.0.2560.1080" timestamp="1580950885151" />
     <state width="2537" height="354" key="GridCell.Tab.1.center/67.27.1853.1053/1920.0.2560.1080@1920.0.2560.1080" timestamp="1579484027547" />
-    <state width="2537" height="354" key="GridCell.Tab.1.left" timestamp="1579484027547">
+    <state width="2537" height="354" key="GridCell.Tab.1.left" timestamp="1580950885151">
       <screen x="1920" y="0" width="2560" height="1080" />
     </state>
+    <state width="2537" height="354" key="GridCell.Tab.1.left/0.541.1920.1052/1920.0.2560.1080@1920.0.2560.1080" timestamp="1580950885151" />
     <state width="2537" height="354" key="GridCell.Tab.1.left/67.27.1853.1053/1920.0.2560.1080@1920.0.2560.1080" timestamp="1579484027547" />
-    <state width="2537" height="354" key="GridCell.Tab.1.right" timestamp="1579484027547">
+    <state width="2537" height="354" key="GridCell.Tab.1.right" timestamp="1580950885151">
       <screen x="1920" y="0" width="2560" height="1080" />
     </state>
+    <state width="2537" height="354" key="GridCell.Tab.1.right/0.541.1920.1052/1920.0.2560.1080@1920.0.2560.1080" timestamp="1580950885151" />
     <state width="2537" height="354" key="GridCell.Tab.1.right/67.27.1853.1053/1920.0.2560.1080@1920.0.2560.1080" timestamp="1579484027547" />
     <state x="2645" y="138" key="SettingsEditor" timestamp="1579669937683">
       <screen x="1920" y="0" width="2560" height="1080" />
@@ -250,10 +257,10 @@
     <state x="2645" y="138" key="SettingsEditor/0.602.1920.1052/1920.0.2560.1080@1920.0.2560.1080" timestamp="1579669937683" />
     <state x="2645" y="138" key="SettingsEditor/67.27.1853.1053/1920.0.2560.1080@1920.0.2560.1080" timestamp="1579133770359" />
     <state x="592" y="162" key="SettingsEditor/67.27.1853.1053/1920.0.2560.1080@67.27.1853.1053" timestamp="1578689261456" />
-    <state x="2724" y="362" key="com.intellij.ide.util.TipDialog" timestamp="1580939152961">
+    <state x="2724" y="362" key="com.intellij.ide.util.TipDialog" timestamp="1581106424134">
       <screen x="1920" y="0" width="2560" height="1080" />
     </state>
-    <state x="2724" y="362" key="com.intellij.ide.util.TipDialog/0.541.1920.1052/1920.0.2560.1080@1920.0.2560.1080" timestamp="1580939152961" />
+    <state x="2724" y="362" key="com.intellij.ide.util.TipDialog/0.541.1920.1052/1920.0.2560.1080@1920.0.2560.1080" timestamp="1581106424134" />
     <state x="2724" y="362" key="com.intellij.ide.util.TipDialog/0.602.1920.1052/1920.0.2560.1080@1920.0.2560.1080" timestamp="1579668729857" />
     <state x="2724" y="362" key="com.intellij.ide.util.TipDialog/67.27.1853.1053/1920.0.2560.1080@1920.0.2560.1080" timestamp="1579572875959" />
     <state x="649" y="380" key="com.intellij.ide.util.TipDialog/67.27.1853.1053/1920.0.2560.1080@67.27.1853.1053" timestamp="1578689217058" />
