@@ -5,7 +5,7 @@
 import requests, os, bs4
 
 url = 'https://xkcd.com/' # Staring URL
-os.makedirs('xkcd', exist_ok = True) #store comics in ./xkcd
+os.makedirs('../xkcd', exist_ok = True) #store comics in ./xkcd
 
 while not url.endswith('#'):
     #Downloads page
@@ -31,7 +31,7 @@ while not url.endswith('#'):
             url = 'https://xkcd.com' + prevLink.get('href')
             continue # returns to the begging of the while loop
 
-    imageFile = open(os.path.join('xkcd', os.path.basename(ComicUrl)), 'wb')  # write binary to save it
+    imageFile = open(os.path.join('../xkcd', os.path.basename(ComicUrl)), 'wb')  # write binary to save it
     for chunk in res.iter_content(100000):
         imageFile.write(chunk)
 
